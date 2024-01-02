@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(15,15,15); 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; 
+    color: #333;
+} 
+  
+  .container {
+    width: 80%;
+    padding: 20px;
+    background-color: rgb(139,0,0);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  
+  .contact-info, .contact-form {
+    background-color: #1a1a1a; 
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  
+  .contact-form .message-label {
+    font-size: 18px;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  
+  .contact-form textarea {
+    /*Taille de boite (peux pas bouger)*/
+    max-width: calc(100% - 20px);
+    min-width: calc(100% - 20px);
+    width: calc(100% - 20px);
+
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+    background-color: #1a1a1a; 
+    color: white;
+  }
+  
+  .contact-form .button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #8B0000; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .contact-form .button:hover {
+    background-color: #5A0000; 
+  }
+  
+  .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8B0000; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #5A0000; 
+  }
+  
+  .highlight {
+    color: #8B0000; 
+  }

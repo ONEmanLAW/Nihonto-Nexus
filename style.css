@@ -1,0 +1,577 @@
+/*Body base */
+body{
+    background-color: rgb(15, 15, 15);
+    scroll-behavior: smooth;
+}
+
+
+/*SECTION HEADER */
+header{
+    background-color: rgb(139, 10, 10);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.firstHeader{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.serviceButton{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+    margin: 10px;
+    color: balck;
+    transition: all 0.7s;
+}
+
+.serviceButton:hover{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.secondHeader{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 75px;
+}
+
+.panierLogo{
+    width: 33px;
+    margin-right: 50px;
+    margin-bottom: 4px;   
+}
+
+.userLogo{
+    width: 36px;
+}
+
+.thirdHeader{
+    display:flex;
+    justify-content: flex-start;
+
+}
+
+.searchinput{
+    width: auto;
+    min-width: 275px;
+    margin-left: 10px;
+    padding-left: 5px;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    transition: all 0.7s;
+}
+
+.searchinput:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.forthHeader{
+    display: flex;
+    justify-content: center;
+}
+
+.mainLogo{
+    mix-blend-mode:hard-light;
+    width: 300px;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeIn 4s forwards;
+}
+
+
+/*SECTION NAV */
+.navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background: rgb(15, 15, 15);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav{
+    position: relative;
+    width: 550px;
+    height: 60px;
+    background: #222;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 0 23px;
+    z-index: 1;
+}
+
+nav span {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(45deg,rgb(55,0,0),rgb(139,0,0));
+    border-radius: 8px;
+    transition: .5s;
+}
+
+nav a:nth-child(1),
+nav a:nth-child(2),
+nav a:nth-child(3){
+    font-family:monospace
+}
+
+nav a:nth-child(1):hover~span{
+    width: 33.33%; 
+    left: 0;
+
+}
+
+nav a:nth-child(2):hover~span{
+    width: 33.33%; 
+    left: 33.33%; 
+}
+
+nav a:nth-child(3):hover~span{
+    width: 33.33%; 
+    left: 66.66%;
+}
+
+
+/*SECTION TITLE*/
+.mainTitle {
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    letter-spacing: 10px;
+    transition: all 0.7s;
+    opacity: 0;
+    animation: fadeIn 4s forwards;
+}
+
+.mainTitle:hover{
+    color: rgb(139,0,0);
+}
+
+.mainCitation {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-style: italic;
+    transition: all 0.7s;
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+}
+
+.mainCitation:hover{
+    color: rgb(139, 0, 0);
+}
+
+
+.histoireTitle {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.histoireTitle h2 {
+    font-size: 40px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    letter-spacing: 5px;
+    padding-top: 175px;
+    transition: all 0.7s;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.histoireTitle h2:hover{
+    color: rgb(139, 0, 0);
+}
+
+
+
+/*SECTION HISOIRE*/
+.mainStory{
+    padding: 75px;
+}
+
+.firstStory{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 40px;
+    border-radius: 0px 15px 0px 15px;
+    -webkit-border-radius: 0px 15px 0px 15px;
+    -moz-border-radius: 0px 15px 0px 15px;
+    border: 18px groove rgb(139,0,0);
+    background-color: #222;
+    color: white;
+    padding: 40px;
+    margin-left: 25%;
+}
+
+.akiraLogo{
+    width: 350px;
+    margin-left: 25px;
+}
+
+.secondStory{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 40px;
+    border-radius: 0px 15px 0px 15px;
+    -webkit-border-radius: 0px 15px 0px 15px;
+    -moz-border-radius: 0px 15px 0px 15px;
+    border: 18px groove rgb(139,0,0);
+    background-color: #222;
+    color: white;
+    padding: 40px;
+    margin-right: 25%;
+}
+
+.cristalLogo{
+    width: 200px;
+    margin-right: 25px;
+}
+
+.thirdStory{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 40px;
+    border-radius: 0px 15px 0px 15px;
+    -webkit-border-radius: 0px 15px 0px 15px;
+    -moz-border-radius: 0px 15px 0px 15px;
+    border: 18px groove rgb(139,0,0);
+    background-color: #222;
+    color: white;
+    padding-left:40px;
+    margin-left: 25%;
+}
+
+.forthStory{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 40px;
+    border-radius: 0px 15px 0px 15px;
+    -webkit-border-radius: 0px 15px 0px 15px;
+    -moz-border-radius: 0px 15px 0px 15px;
+    border: 18px groove rgb(139,0,0);
+    background-color: #222;
+    color: white;
+    padding: 40px;
+    margin-right: 25%;
+    
+}
+
+.yingYang{ 
+    width: 250px;
+    margin-right: 25px;
+}
+
+.fiveStory{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin-bottom:25px;
+    font-size: 40px;
+    border-radius: 0px 15px 0px 15px;
+    -webkit-border-radius: 0px 15px 0px 15px;
+    -moz-border-radius: 0px 15px 0px 15px;
+    border: 18px groove rgb(139,0,0);
+    background-color: #222;
+    color: white;
+    padding: 40px;
+    margin-left: 25%;
+}
+
+.katanaIcon{
+    width: 250px;
+    margin-left: 25px;
+}
+
+.sixStory{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 40px;
+    border-radius: 0px 15px 0px 15px;
+    -webkit-border-radius: 0px 15px 0px 15px;
+    -moz-border-radius: 0px 15px 0px 15px;
+    border: 18px groove rgb(139,0,0);
+    background-color: #222;
+    color: white;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-right: 25%;
+}
+
+.theKantana{
+    width: 350px;
+}
+
+.firstStory p,
+.secondStory p,
+.thirdStory p,
+.forthStory p,
+.fiveStory p,
+.sixStory p {
+    font-size: 28px; /* Adjust the font size to make the text larger */
+    text-align: justify;
+    margin-bottom: 20px;
+    color: white;
+    line-height: 1.5;
+}
+
+.firstStory p {
+    font-style: italic;
+}
+
+.secondStory p {
+    font-style: italic;
+}
+
+.thirdStory p {
+    font-style: italic;
+}
+
+.forthStory p {
+    font-style: italic;
+}
+
+.fiveStory p {
+    font-style: italic;
+}
+
+.sixStory p {
+    font-style: italic;
+}
+
+.lastParagraph {
+    font-family: 'Cursive', sans-serif; /* Change to your preferred cursive font */
+    font-size: 32px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+    max-width: 80%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.whiteLineBreak {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0; 
+    }
+    to {
+      opacity: 1; 
+    }
+  }
+  
+.animationFade{
+    overflow-x:hidden;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+}
+
+  .fadeIn .animationFade:nth-child(even) > div{
+    opacity: 0.2; 
+    transition: opacity 0.2s ease-in-out, transform 0.4s ease-in-out;
+    transform: translateX(-100%); 
+}
+
+.fadeIn .animationFade:nth-child(odd) > div{
+    opacity: 0.2; 
+    transition: opacity 0.2s ease-in-out, transform 0.4s ease-in-out;
+    transform: translateX(100%); 
+}
+
+.fadeIn .animationFade:hover >div {
+    opacity: 1;
+    transform: translateX(0); 
+}
+
+
+/*PAGE CATALOGUE*/
+.redBackground{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    position: absolute;
+    background: rgb(139, 0, 0);
+    background: linear-gradient(0deg, rgb(139, 0, 0) 5%, rgba(0,0,0,0) 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 130px;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 6s forwards;
+}
+
+.KatanaText{
+    color: white;
+    padding-top: 15px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.backgroundImage{
+    width: 100%;
+    height: 100%;
+}
+
+.background{
+    position: relative;
+    position: sticky;
+    top: 0;
+}
+
+.shoppingPage{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: auto;
+    min-width: 250px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+
+article{
+    padding: 30px;
+    width: auto;
+    min-width: 350px;
+    max-width: 33%;
+}
+
+
+
+.waterSpan{
+    color: blue;
+    font-weight: bold;
+}
+
+.fireSpan{
+    color: orange;
+    font-weight: bold;
+}
+
+.thunderSpan{
+    color: yellow;
+    font-weight: bold;
+}
+
+.windSpan{
+    color: beige;
+    font-weight: bold;
+}
+
+.buyButton{
+    background-color: rgb(139, 0, 0);
+    border-color: black;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+    display: block;
+    transition: all 0.15s;
+}
+
+.buyButton:hover{   
+    text-decoration: underline white 2px;
+    font-weight: bold;
+    opacity: 0.9;
+    border-color: white;
+}
+.buyButton:active{
+    opacity: 0.7;
+}
+
+  .animateOnScroll {
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+  }
+
+
+/*SECTION FOOTER*/
+.payPalLogo{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.masterCardLogo{
+    width: 45px;
+}
+
+.valideLogo{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.footerText{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.footerLogos{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.webName{
+    font-weight: bold;
+}
